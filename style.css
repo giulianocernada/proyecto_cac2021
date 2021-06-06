@@ -8,6 +8,10 @@ body {
     height: 100vh;
 }
 
+main {
+    padding-bottom: 10em;
+}
+
 #landing {
     background-image: url('files/omelette.jpeg');
     background-size: 100%;
@@ -128,7 +132,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: #fdd835;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
 }
 
@@ -144,4 +148,8 @@ footer {
 .footer-text {
     padding: 1em;
     margin: 0;
+}
+
+form {
+    margin-bottom: 5em;
 }
