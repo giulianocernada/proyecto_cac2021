@@ -191,7 +191,7 @@ input {
     border-radius: 5px;
 }
 
-@media screen and (min-width: 480px) {
+@media (max-width: 1365px) {
     h1 {
         font-size: 5em;
     }
