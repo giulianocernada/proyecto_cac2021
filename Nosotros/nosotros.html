@@ -3,44 +3,86 @@
     <head>
         <meta charset="UTF-8"> 
         <title>La omeletteria</title>
-        <link rel="STYLESHEET" href="../style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="STYLESHEET" href="../style 2.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/2023e4c3fb.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <h1>Acerca de nosotros</h1>
         </header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a>Nosotros</a></li>
-                <li><a href="../Menu/menu.html">Menú</a></li>
-                <li><a href="../Sucursales/sucursales.html">Sucursales</a></li>
-                <li><a href="../Contacto/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #fdd835;">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="../Nosotros/nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Menu/menu.html">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Sucursales/sucursales.html">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Contacto/contacto.html">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
         </nav>
         <main>
-            <div class="container">
-                <div class="aside-img">
-                    <img src="../files/o2.jpeg">
-                </div>
-                <div class="texto">
+            <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
                     <p>La omeletteria nació en Bahía Blanca en el año 2021 de la mano de un grupo de amigos fanáticos de los omelettes. La idea era ofrecer distintas variedades de esta noble comida que se puede preparar con casi todo. Al día de hoy contamos con 16 variedades de omelettes con muchas más por venir.</p>
                     <p>¿Qué ofrecemos? Una gran variedad, los mejores ingredientes, un ambiente agradable y una inigualable atención para que siempre tengas ganas de volver.</p>
                     <p>Nos podes encontrar en nuestra clásica sucursal del centro o en la recientemente inaugurada del shopping de nuestra ciudad.</p>
                     <h3><i>¡Omelette au fromage!</i></h3>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../files/o2.jpeg" class="d-block w-100 h-auto" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../files/o3.jpeg" class="d-block w-100 h-auto" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../files/o4.jpeg" class="d-block w-100 h-auto" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div>
-                <p class="footer-text">2021 - La Omeletteria</p>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <p>La omeletteria nació en Bahía Blanca en el año 2021 de la mano de un grupo de amigos fanáticos de los omelettes. La idea era ofrecer distintas variedades de esta noble comida que se puede preparar con casi todo. Al día de hoy contamos con 16 variedades de omelettes con muchas más por venir.</p>
+                <p>¿Qué ofrecemos? Una gran variedad, los mejores ingredientes, un ambiente agradable y una inigualable atención para que siempre tengas ganas de volver.</p>
+                <p>Nos podes encontrar en nuestra clásica sucursal del centro o en la recientemente inaugurada del shopping de nuestra ciudad.</p>
+                <h3><i>¡Omelette au fromage!</i></h3>
             </div>
-            <div class="social">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram-square"></i>
+        </div>
+        </main>
+        <footer class="col-12">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 align-middle" style="text-align: center; margin-top: 2em;">
+                    <p>2021 - La Omeletteria</p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 align-middle" style="text-align: center;">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram-square"></i>
+                </div>
             </div>
         </footer>
     </body>
